@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/f6dcf461c1.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div id="ShoppingCart" class="ShoppingCart" >
+       <div class="carts">
+        <div id="item" class="item">
+            <div id="remove" class="remove">
+                <Button onclick="removeDummy()" id="btnh1" class="btn"><i class="fa fa-trash" aria-hidden="true"></i></Button>
+            </div>
+            <div id="Like" class="Like">
+                <Button onclick="Toggle2()" id="btnh2" class="btn2"><i class="fas fa-heart"></i></Button>
+            </div>
+            <div class="img"><img id="img1" src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,b_rgb:f5f5f5/b7d9211c-26e7-431a-ac24-b0540fb3c00f/air-force-1-07-mens-shoes-5QFp5Z.png"></div>
+            <div class="itemData">
+                <h3 class="product-name">Nike Air Force 1 '07</h3>
+                <h4 class="product-for">Men's Shoes</h4>
+			    <h4 class="product-price">$ 110</h4>					
+            </div>
+            <div class="amount">
+                <label for="name">Amount</label>
+                <div class="box">
+                    <div class="input-group">
+                        <button id="decrement"><i class="fas fa-minus"></i></button>
+                        <input type="number" id="input1" value="0" onkeyup="totPrice(this.value);"  readonly>
+                        <button id="increment"><i class="fas fa-plus"></i></button>
+                      </div>
+                </div>
+
+                </div>
+
+            
+        </div>
+        <div id="item2" class="item2">
+            <div id="remove2" class="remove2">
+                <Button onclick="removeDummy2()" id="btnh3" class="btn3"><i class="fa fa-trash" aria-hidden="true"></i></Button>
+            </div>
+            <div id="Like" class="Like2">
+                <Button onclick="Toggle4()" id="btnh4" class="btn4"><i class="fas fa-heart"></i></Button>
+            </div>
+            <div class="img"><img id="img2"  src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/541e04e6-4e8f-411b-93e2-b3c1f0f235b5/air-max-90-futura-womens-shoes-kvRZ4h.png"></div>
+            <div class="itemData2">
+                <h3 class="product-name">Nike Air Max 90 Futura</h3>
+                <h4 class="product-for">Women's Shoes</h4>
+			    <h4 class="product-price">$ 160</h4>					
+            </div>
+            <div class="amount2">
+                <label for="name">Amount</label>
+                <div class="box2">
+                    <div class="input-group2">
+                        <button id="decrementD"><i class="fas fa-minus"></i></button>
+                        <input type="number" id="inputD" value="0" onkeyup="totPrice2(this.value);"  readonly>
+                        <button id="incrementD"><i class="fas fa-plus"></i></button>
+                      </div>
+                </div>
+
+                </div>
+
+         
+            
+        </div>
+       </div> 
+
+
+        <div id="TotalPrice3" class="TotalPrice3">
+            <label><b>Total Amount</b></label>
+    
+            <input class="w3-input w3-border" name="item_price" id="item_price3" type="text" readonly >
+            <button onclick="calc3();" >Total</button>
+    
+            
+        </div>
+    </div>
+
+ 
+</body>
+<script src="./main.js"></script>
+<script>
+
+</script>
+</html>
